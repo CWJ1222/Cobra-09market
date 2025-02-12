@@ -20,38 +20,35 @@ const OrderModel = require('./Order')(sequelize, Sequelize);
 const WishlistsModel = require('./Wishlists')(sequelize, Sequelize);
 const CommentModel = require('./Comment')(sequelize, Sequelize);
 
-// Wishlists와 Product 간 관계
+/*
+ - ERD 참고
+*/
+
+// Product : Wishlists = 1 : N
 WishlistsModel.belongsTo(ProductModel, {
   foreignKey: 'product_key',
-  as: 'ProductWishlists', // 고유 별칭 추가
+  as: 'ProductWishlists',
 });
 ProductModel.hasMany(WishlistsModel, {
   foreignKey: 'product_key',
-  as: 'WishlistsForProduct', // 고유 별칭 추가
+  as: 'WishlistsForProduct',
 });
 
-// 1 : N 관계
-CategoryModel.hasMany(ProductModel, {
-  foreignKey: 'category_id',
-  onDelete: 'CASCADE',
-});
+// Category : Product = 1 : N
 ProductModel.belongsTo(CategoryModel, {
   foreignKey: 'category_id',
   onDelete: 'CASCADE',
 });
-
-// 1 : N 관계
-UserModel.hasMany(ProductModel, { foreignKey: 'user_id', onDelete: 'CASCADE' });
-ProductModel.belongsTo(UserModel, {
-  foreignKey: 'user_id',
+CategoryModel.hasMany(ProductModel, {
+  foreignKey: 'category_id',
   onDelete: 'CASCADE',
 });
 
-// 1 : N 관계
+// User : Order = 1 : N
 UserModel.hasMany(OrderModel, { foreignKey: 'user_id', onDelete: 'CASCADE' });
 OrderModel.belongsTo(UserModel, { foreignKey: 'user_id', onDelete: 'CASCADE' });
 
-// 1 : N 관계
+// Product : Order = 1 : N
 ProductModel.hasMany(OrderModel, {
   foreignKey: 'product_key',
   onDelete: 'CASCADE',
@@ -61,33 +58,22 @@ OrderModel.belongsTo(ProductModel, {
   onDelete: 'CASCADE',
 });
 
-// N:M 관계
-// UserModel.belongsToMany(ProductModel, {
-//   through: WishlistsModel,
-//   foreignKey: 'user_id',
-//   otherKey: 'product_key',
-// });
-
-// ProductModel.belongsToMany(UserModel, {
-//   through: WishlistsModel,
-//   foreignKey: 'product_key',
-//   otherKey: 'user_id',
-// });
+// User - Wishlists(중간 테이블) - Prodocut : 다대다 관계
 UserModel.belongsToMany(ProductModel, {
   through: WishlistsModel,
   foreignKey: 'user_id',
   otherKey: 'product_key',
-  as: 'WishlistProducts', // 고유 별칭 추가
+  as: 'WishlistProducts',
 });
 
 ProductModel.belongsToMany(UserModel, {
   through: WishlistsModel,
   foreignKey: 'product_key',
   otherKey: 'user_id',
-  as: 'WishlistUsers', // 고유 별칭 추가
+  as: 'WishlistUsers',
 });
 
-// 1 : N 관계
+// User : Comment = 1 : N
 UserModel.hasMany(CommentModel, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
@@ -97,7 +83,7 @@ CommentModel.belongsTo(UserModel, {
   onDelete: 'CASCADE',
 });
 
-// 1 : N 관계
+// Product : Comment = 1 : N
 ProductModel.hasMany(CommentModel, {
   foreignKey: 'product_key',
   onDelete: 'CASCADE',
