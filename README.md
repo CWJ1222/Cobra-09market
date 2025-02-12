@@ -5,6 +5,143 @@
 **Cobra09**는 유저들이 공동구매를 등록하고 판매를 신청할 수 있는 플랫폼입니다.\
 이 플랫폼은 쉽고 간편한 구매/판매 프로세스를 제공하며, 보다 저렴한 가격에 제품을 구매할 수 있도록 지원합니다.
 
+---
+
+## **팀원 소개**
+
+| 이름   | 역할       | GitHub                                            | 이메일                                                    |
+| ------ | ---------- | ------------------------------------------------- | --------------------------------------------------------- |
+| 최원정 | 팀 리더    | [CWJ1222](https://github.com/CWJ1222)             | [qadzcwsx@gmail.com](mailto:qadzcwsx@gmail.com)           |
+| 이수진 | 백엔드     | [Soojin-Lee-01](https://github.com/Soojin-Lee-01) | [sojinlee1004@naver.com](mailto:sojinlee1004@naver.com)   |
+| 오성환 | 백엔드     | [gogigogigogi](https://github.com/gogigogigogi)   | [tlsrb101@gmail.com](mailto:tlsrb101@gmail.com)           |
+| 최수연 | 프론트엔드 | [suyeon-dev](https://github.com/suyeon-dev)       | [choilynne.dev@gmail.com](mailto:choilynne.dev@gmail.com) |
+| 오태원 | 프론트엔드 | [oh2815](https://github.com/oh2815)               | [oh2815@naver.com](mailto:oh2815@naver.com)               |
+
+---
+
+## 🚀 데모 링크👉 [Cobra09 공동구매 마켓](http://175.121.178.197:8081/)
+
+## 🔥 주요 기능 한눈에 보기
+
+| 기능명            | 설명                                             |
+| ----------------- | ------------------------------------------------ |
+| 회원가입 / 로그인 | 이메일 및 소셜 로그인(카카오) 지원               |
+| 공동구매 등록     | 판매자가 공동구매 상품을 등록하고 가격 설정 가능 |
+| 공동구매 참여     | 구매자가 공동구매에 참여하고 주문 가능           |
+| 찜 기능           | 관심 있는 상품을 저장하여 쉽게 찾아볼 수 있음    |
+| 댓글 및 리뷰      | 상품에 대한 리뷰 및 댓글 작성 가능               |
+| 마이페이지        | 구매 및 판매 내역 확인, 회원정보 수정 가능       |
+
+## 🛠 사용 기술 스택
+
+### **프론트엔드**
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![EJS](https://img.shields.io/badge/EJS-8BC34A?style=for-the-badge&logo=javascript&logoColor=white)
+
+- HTML, CSS, JavaScript 기반의 프론트엔드
+- **EJS** 템플릿 엔진을 활용한 서버 사이드 렌더링
+- Vanilla JS로 동적인 UI 요소 구현 (찜 기능, 댓글 작성, 상품 슬라이드 등)
+
+---
+
+### **백엔드**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white)
+![Multer](https://img.shields.io/badge/Multer-FF6F00?style=for-the-badge&logo=javascript&logoColor=white)
+![bcrypt](https://img.shields.io/badge/bcrypt-4A90E2?style=for-the-badge&logo=security&logoColor=white)
+
+- **Node.js & Express.js** 기반 REST API 개발
+- **Sequelize ORM**을 활용한 MySQL 연동 및 모델링
+- **Multer**를 사용한 이미지 업로드 기능 구현
+- **bcrypt**를 활용한 비밀번호 암호화 및 인증
+- **express-session**을 이용한 사용자 인증 및 세션 관리
+- **dotenv**로 환경 변수 관리
+
+---
+
+### **데이터베이스**
+
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+
+- **MySQL (MariaDB)** 사용
+- Sequelize ORM을 통한 관계형 데이터 모델링
+- **주요 테이블**: Users, Products, Orders, Comments, Wishlists
+
+---
+
+### **배포 및 인프라**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![PM2](https://img.shields.io/badge/PM2-2B037A?style=for-the-badge&logo=pm2&logoColor=white)
+
+- **AWS EC2**에서 서버 호스팅
+- **AWS RDS**를 활용한 MySQL 데이터베이스 관리
+- **Nginx** 리버스 프록시 설정 및 HTTPS 적용
+- **PM2**를 사용한 Node.js 프로세스 매니지먼트
+
+---
+
+### **기타 라이브러리 & 툴**
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=javascript&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+
+- **Git & GitHub**를 활용한 버전 관리 및 협업
+- **Postman**으로 API 테스트 및 문서화
+- **Axios**를 사용한 API 요청 및 데이터 처리
+
+---
+
+## 📌 프로젝트 히스토리
+
+### 🏁 Early Stage (~24.12.16)
+
+- 📝 **팀명 및 주제 선정** (아이디어 취합 후 다수결 결정)
+- 📄 **기획서 제출**
+- ⚙ **팀 규칙 설정** (CamelCase 등 코딩 컨벤션 확립)
+- 🛠 **협업 환경 구축** (Notion, GitHub 초대 및 설정)
+- 📂 **폴더 구조 설계 및 GitHub 초기 Push**
+
+---
+
+### 🚀 Mid Stage 1 (~24.12.23)
+
+- 🏗 **ERD 설계 및 데이터베이스 구축**
+- ✅ **핵심 기능 구현 & 1차 배포**
+  - 회원가입 / 탈퇴
+  - 로그인 / 정보 수정
+  - 판매 등록 / 구매 등록
+
+---
+
+### 🎨 Mid Stage 2 (~24.12.27)
+
+- 🎭 **프론트엔드 UI 개선 및 추가 기능 구현**
+  - 판매 페이지, 홈 화면, 마이페이지 UI 수정
+  - 댓글 기능 / 찜 기능 등 고급 기능 추가
+- 📢 **PT 발표 플랫폼 선정 및 준비**
+
+---
+
+### 🎯 Late Stage (~24.12.30)
+
+- 📝 **PT 자료 제작 및 발표 준비**
+- 🔍 **코드 정리 및 리팩토링**
+- 📦 **더미 데이터 생성 & 기능 점검**
+- 🚀 **최종 배포 (2차 배포) 및 발표 진행**
+
+---
+
 ## **기능 소개**
 
 ### **1. 회원가입 및 로그인**
@@ -136,18 +273,6 @@ Cobra-09market/
 ├── README.md         # 프로젝트 설명 파일
 └── sql.sql           # MySQL 초기 데이터 스크립트
 ```
-
----
-
-## **팀원 소개**
-
-| 이름   | 역할       | GitHub                                            | 이메일                                                    |
-| ------ | ---------- | ------------------------------------------------- | --------------------------------------------------------- |
-| 최원정 | 팀 리더    | [CWJ1222](https://github.com/CWJ1222)             | [qadzcwsx@gmail.com](mailto:qadzcwsx@gmail.com)           |
-| 이수진 | 백엔드     | [Soojin-Lee-01](https://github.com/Soojin-Lee-01) | [sojinlee1004@naver.com](mailto:sojinlee1004@naver.com)   |
-| 오성환 | 백엔드     | [gogigogigogi](https://github.com/gogigogigogi)   | [tlsrb101@gmail.com](mailto:tlsrb101@gmail.com)           |
-| 최수연 | 프론트엔드 | [suyeon-dev](https://github.com/suyeon-dev)       | [choilynne.dev@gmail.com](mailto:choilynne.dev@gmail.com) |
-| 오태원 | 프론트엔드 | [oh2815](https://github.com/oh2815)               | [oh2815@naver.com](mailto:oh2815@naver.com)               |
 
 ---
 
