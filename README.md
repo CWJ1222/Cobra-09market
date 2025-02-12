@@ -3,7 +3,7 @@
 ## **소개**
 
 **Cobra09**는 유저들이 공동구매를 등록하고 판매를 신청할 수 있는 플랫폼입니다.\
-이 플랫폼은 쉽고 간편한 구매/판매 프로세스를 제공하며, 사용자 간 협력하여 보다 저렴한 가격에 제품을 구매할 수 있도록 지원합니다.
+이 플랫폼은 쉽고 간편한 구매/판매 프로세스를 제공하며, 보다 저렴한 가격에 제품을 구매할 수 있도록 지원합니다.
 
 ## **기능 소개**
 
@@ -67,7 +67,6 @@
 
 - AWS EC2 (서버 호스팅)
 - AWS RDS (MySQL 데이터베이스)
-- GitHub Actions (CI/CD 자동화 배포 예정)
 
 ---
 
@@ -142,13 +141,13 @@ Cobra-09market/
 
 ## **팀원 소개**
 
-| 이름  | 역할    | GitHub                                            | 이메일                                                        |
-| --- | ----- | ------------------------------------------------- | ---------------------------------------------------------- |
-| 최원정 | 팀 리더  | [CWJ1222](https://github.com/CWJ1222)             | [qadzcwsx@gmail.com](mailto\:qadzcwsx@gmail.com)           |
-| 이수진 | 백엔드   | [Soojin-Lee-01](https://github.com/Soojin-Lee-01) | [sojinlee1004@naver.com](mailto\:sojinlee1004@naver.com)   |
-| 오성환 | 백엔드   | [gogigogigogi](https://github.com/gogigogigogi)   | [tlsrb101@gmail.com](mailto\:tlsrb101@gmail.com)           |
-| 최수연 | 프론트엔드 | [suyeon-dev](https://github.com/suyeon-dev)       | [choilynne.dev@gmail.com](mailto\:choilynne.dev@gmail.com) |
-| 오태원 | 프론트엔드 | [oh2815](https://github.com/oh2815)               | [oh2815@naver.com](mailto\:oh2815@naver.com)               |
+| 이름   | 역할       | GitHub                                            | 이메일                                                    |
+| ------ | ---------- | ------------------------------------------------- | --------------------------------------------------------- |
+| 최원정 | 팀 리더    | [CWJ1222](https://github.com/CWJ1222)             | [qadzcwsx@gmail.com](mailto:qadzcwsx@gmail.com)           |
+| 이수진 | 백엔드     | [Soojin-Lee-01](https://github.com/Soojin-Lee-01) | [sojinlee1004@naver.com](mailto:sojinlee1004@naver.com)   |
+| 오성환 | 백엔드     | [gogigogigogi](https://github.com/gogigogigogi)   | [tlsrb101@gmail.com](mailto:tlsrb101@gmail.com)           |
+| 최수연 | 프론트엔드 | [suyeon-dev](https://github.com/suyeon-dev)       | [choilynne.dev@gmail.com](mailto:choilynne.dev@gmail.com) |
+| 오태원 | 프론트엔드 | [oh2815](https://github.com/oh2815)               | [oh2815@naver.com](mailto:oh2815@naver.com)               |
 
 ---
 
@@ -157,8 +156,7 @@ Cobra-09market/
 1. **레포지토리 클론**
 
    ```sh
-   git clone https://github.com/팀_레포지토리/cobra09.git
-   cd cobra09
+   git clone https://github.com/CWJ1222/Cobra-09market.git
    ```
 
 2. **환경 변수 설정**
@@ -178,8 +176,3 @@ Cobra-09market/
    ```
 
 ---
-
-## **라이선스**
-
-이 프로젝트는 ISC 라이선스를 따릅니다.
-
